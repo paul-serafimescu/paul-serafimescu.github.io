@@ -1,6 +1,4 @@
-import type {
-  FunctionComponent
-} from 'react';
+import * as React from 'react';
 import Profile from './assets/about.jpg';
 import Container from 'react-bootstrap/Container';
 import Column from 'react-bootstrap/Col';
@@ -8,7 +6,7 @@ import Row from 'react-bootstrap/Row';
 
 type AboutProps = {};
 
-export const About: FunctionComponent<AboutProps> = () => (
+export const About: React.FC<AboutProps> = () => (
   <section id="about">
     <Container>
       <div className="title-box text-center">
@@ -20,7 +18,7 @@ export const About: FunctionComponent<AboutProps> = () => (
           <Column lg={6}>
             <div className="about-me pt-4 pb-pt-md-0">
               <p className="lead">
-                My name is Paul Serafimescu and I'm a freshman Computer Science and Engineering major at UCLA.
+                My name is Paul Serafimescu and I'm a sophomore Computer Science and Engineering major at UCLA.
               </p>
               <p className="lead">
                 In the past, I have job shadowed at vCom Solutions where I was introduced to C# .NET and MVC architecture,
@@ -30,7 +28,7 @@ export const About: FunctionComponent<AboutProps> = () => (
               </p>
               <p className="lead">
                 Outside of writing code, I enjoy reading, particularly about economic theory and law (or the intersection of the two!),
-                hiking Sonoma County, and playing Rachminov and Chopin on the piano.
+                hiking, and playing Rachminov and Chopin on the piano.
               </p>
             </div>
           </Column>

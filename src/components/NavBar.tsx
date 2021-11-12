@@ -26,19 +26,20 @@ export function NavBar(props: NavBarProps) {
   return (
     <React.Fragment>
       <Navbar id="navbar" collapseOnSelect expand="lg" className={scrolled ? undefined : "faint-white-bg"} bg={scrolled ? "light" : undefined} variant={scrolled ? "light" : undefined} fixed="top">
-        <Navbar.Brand href="#home">
-          Paul Serafimescu
+        <Navbar.Brand className={scrolled ? "alternative-brand" : undefined} href="#home">
+          <h3><code>Paul Serafimescu</code></h3>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             {Object.entries(sections).map(([key, value]) => (
-              <Nav.Link id={key} key={key} href={value}>{key}</Nav.Link>
+              <Nav.Link className={scrolled ? "navlink-other" : undefined} id={key} key={key} href={value}>{key}</Nav.Link>
             ))}
-            <a className="btn btn-primary resume-btn" target="_blank" rel="noreferrer" href="resume.pdf">Resume</a>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
     </React.Fragment>
   );
 }
+
+export default NavBar;

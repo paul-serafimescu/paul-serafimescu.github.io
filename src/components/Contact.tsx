@@ -1,6 +1,4 @@
-import React, {
-  FunctionComponent,
-} from 'react';
+import * as React from 'react';
 import {
   useForm,
   ValidationError
@@ -9,7 +7,7 @@ import Container from 'react-bootstrap/Container';
 
 type ContactProps = {};
 
-export const Contact: FunctionComponent<ContactProps> = () => {
+export const Contact: React.FC<ContactProps> = () => {
 
   const [state, handleSubmit] = useForm('xrgrzlnp');
 

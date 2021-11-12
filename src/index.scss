@@ -2,6 +2,8 @@
   @return mix(black, $color, $weight);
 }
 
+@import "~bootstrap/scss/bootstrap";
+
 body {
   background-color: #f5f5f5 !important;
 }
@@ -20,18 +22,22 @@ section {
 }
 
 .nav-link {
-  color: #076cd8 !important;
+  color: #e2ecf8 !important;
   font-size: large;
   margin-right: 15px !important;
   &:hover {
-    background-color: #007bff;
+    background-color: $danger;
     color: white !important;
     border-radius: 4px;
   }
 }
 
+.navlink-other {
+  color: $danger !important;
+}
+
 .faint-white-bg {
-  background-color: rgba(255, 255, 255, 0.80) !important;
+  background-color: rgba(103, 103, 104, 0.9) !important;
   -webkit-transition: background-color 400ms linear;
   transition: background-color 400ms linear;
   -ms-transition: background-color 400ms linear;
@@ -39,12 +45,21 @@ section {
 
 .navbar-brand {
   font-size: x-large !important;
-  color: #007bff !important;
+
+  h3 > code {
+    color: #d0e4fa !important;
+  }
   font-weight: bold;
 }
 
+.alternative-brand {
+  h3 > code {
+    color: $danger !important;
+  }
+}
+
 .line-mf {
-  background-color: #007bff;
+  background-color: $danger;
   width: 40px;
   height: 5px;
   margin: 0 auto;
@@ -104,6 +119,23 @@ section {
   color: white;
 }
 
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1.7s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 .centered-text {
   top: 50%;
   left: 50%;
@@ -117,7 +149,7 @@ section {
   color: white;
   padding: 10px;
   &:hover {
-    color: #007bff;
+    color: $danger;
   }
 }
 
@@ -254,5 +286,3 @@ input[type=submit]:hover {
   vertical-align: middle;
   border-style: none;
 }
-
-@import "~bootstrap/scss/bootstrap";

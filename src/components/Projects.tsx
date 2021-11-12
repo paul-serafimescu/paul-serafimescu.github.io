@@ -1,6 +1,4 @@
-import type {
-  FunctionComponent
-} from 'react';
+import * as React from 'react';
 import Container from 'react-bootstrap/Container';
 import Column from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
@@ -16,11 +14,11 @@ interface ProjectProps {
 
 interface ProjectsProps {};
 
-export const Project: FunctionComponent<ProjectProps> = ({ image, title, description, languages, ghLink }) => (
+export const Project: React.FC<ProjectProps> = ({ image, title, description, languages, ghLink }) => (
   <Column md={6}>
     <div className="project-box">
       <div className="project-img">
-        <img className="img-fluid" src={image} alt="" />
+        <img className="img-fluid" src={image} alt={title} />
       </div>
       <div className="project-description">
         <Row>
@@ -40,7 +38,7 @@ export const Project: FunctionComponent<ProjectProps> = ({ image, title, descrip
   </Column>
 );
 
-export const Projects: FunctionComponent<ProjectsProps> = () => (
+export const Projects: React.FC<ProjectsProps> = () => (
   <section id="projects" className="portfolio-mf sect-pt4 route">
     <Container>
       <div className="title-box text-center">

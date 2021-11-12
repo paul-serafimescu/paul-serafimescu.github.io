@@ -1,33 +1,34 @@
 [
   {
-    "title": "wChat",
-    "image": "wChat.png",
-    "description": "Chat application which organizes chatrooms in easy-to-use channels. Uses an invite system to faciliate access and preserve optional privacy. Completed from start to finish in less than one week.",
+    "title": "Growth Tracker",
+    "image": "growth-tracker.svg",
+    "description": "Discord bot and web panel. Tracks guild growth over time and displays trend data in graphical form. Leverages 3rd party Discord OAuth 2.0 workflow and API to enrich user experience. Frontend built on React and backend on Django. Integrated asynchronous discord.py with synchronous Django views.",
     "languages": [
-      "TypeScript/JavaScript",
-      "SQLite3"
+      "Python",
+      "Typescript",
+      "Sass"
     ],
-    "ghLink": "https://github.com/PaulSera1/wChat"
+    "ghLink": "https://github.com/paul-serafimescu/growth-tracker"
   },
   {
     "title": "Quick Grades",
-    "image": "Quick-Grades.png",
+    "image": "quick-grades.svg",
     "description": "Grades storage and calculator app. Offers full CRUD functionality and displays statistics by course name.",
     "languages": [
       "React",
-      "ASP.NET Core"
+      "C# ASP.NET Core"
     ],
-    "ghLink": "https://github.com/PaulSera1/Quick-Grades"
+    "ghLink": "https://github.com/paul-serafimescu/Quick-Grades"
   },
   {
     "title": "httpserver",
     "image": "httpserver.png",
-    "description": "A multithreaded HTTP server implemented from scratch using UNIX sys/socket API for C. Serves static or dynamic HTML through the M4 text preprocessor.",
+    "description": "A multithreaded HTTP server implemented from scratch using UNIX sys/socket API for C. Serves static or dynamic HTML. Easily integrated with React through JSON RESTful API.",
     "languages": [
       "C",
-      "M4",
+      "Javascript",
       "SQLite3"
     ],
-    "ghLink": "https://github.com/PaulSera1/httpserver"
+    "ghLink": "https://github.com/paul-serafimescu/httpserver"
   }
 ]
