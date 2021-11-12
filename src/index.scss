@@ -26,14 +26,14 @@ section {
   font-size: large;
   margin-right: 15px !important;
   &:hover {
-    background-color: $danger;
+    background-color: $dark;
     color: white !important;
     border-radius: 4px;
   }
 }
 
 .navlink-other {
-  color: $danger !important;
+  color: $dark !important;
 }
 
 .faint-white-bg {
@@ -54,12 +54,12 @@ section {
 
 .alternative-brand {
   h3 > code {
-    color: $danger !important;
+    color: $dark !important;
   }
 }
 
 .line-mf {
-  background-color: $danger;
+  background-color: $primary;
   width: 40px;
   height: 5px;
   margin: 0 auto;
@@ -149,7 +149,7 @@ section {
   color: white;
   padding: 10px;
   &:hover {
-    color: $danger;
+    color: $primary;
   }
 }
 
