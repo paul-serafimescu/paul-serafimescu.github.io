@@ -1,19 +1,14 @@
-import {
-  Layout,
-  Background,
-  Projects,
-  About,
-  Contact
-} from './components';
+import * as Components from './components';
 
 function App(): JSX.Element {
   return (
-    <Layout>
-      <Background />
-      <About />
-      <Projects />
-      <Contact />
-    </Layout>
+    <Components.Layout>
+      <Components.Background />
+      <Components.About />
+      <Components.Projects />
+      <Components.Contact />
+      <Components.Footer />
+    </Components.Layout>
   );
 }
 
