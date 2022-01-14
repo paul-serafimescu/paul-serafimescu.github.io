@@ -2,7 +2,7 @@ import * as React from 'react';
 import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import BackgroundImage from './assets/background.png';
+import BackgroundImage from './assets/background.jpg';
 
 type BackgroundProps = {};
 

@@ -25,9 +25,9 @@ export function NavBar(props: NavBarProps) {
 
   return (
     <React.Fragment>
-      <Navbar id="navbar" collapseOnSelect expand="lg" className={scrolled ? undefined : "faint-white-bg"} bg={scrolled ? "light" : undefined} variant={scrolled ? "light" : undefined} fixed="top">
+      <Navbar id="navbar" collapseOnSelect expand="lg" className={scrolled ? "scrolled-nav-bar" : "faint-white-bg"} bg={scrolled ? "light" : undefined} variant={scrolled ? "light" : undefined} fixed="top">
         <Navbar.Brand className={scrolled ? "alternative-brand" : undefined} href="#home">
-          <h3><code>Paul Serafimescu</code></h3>
+          <h3>Paul Serafimescu</h3>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

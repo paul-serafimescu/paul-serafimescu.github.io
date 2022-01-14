@@ -2,6 +2,8 @@
   @return mix(black, $color, $weight);
 }
 
+$dark: #041527;
+
 @import "~bootstrap/scss/bootstrap";
 
 body {
@@ -22,7 +24,7 @@ section {
 }
 
 .nav-link {
-  color: #e2ecf8 !important;
+  color: $dark !important;
   font-size: large;
   margin-right: 15px !important;
   &:hover {
@@ -33,11 +35,15 @@ section {
 }
 
 .navlink-other {
-  color: $dark !important;
+  color: white !important;
+}
+
+.scrolled-nav-bar {
+  background-color: $dark !important;
 }
 
 .faint-white-bg {
-  background-color: rgba(103, 103, 104, 0.9) !important;
+  background-color: #ffffff !important;
   -webkit-transition: background-color 400ms linear;
   transition: background-color 400ms linear;
   -ms-transition: background-color 400ms linear;
@@ -46,15 +52,15 @@ section {
 .navbar-brand {
   font-size: x-large !important;
 
-  h3 > code {
-    color: #d0e4fa !important;
+  h3 {
+    color: $dark !important;
   }
   font-weight: bold;
 }
 
 .alternative-brand {
-  h3 > code {
-    color: $dark !important;
+  h3 {
+    color: white !important;
   }
 }
 

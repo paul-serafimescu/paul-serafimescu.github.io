@@ -14,29 +14,31 @@ interface ProjectProps {
 
 interface ProjectsProps {};
 
-export const Project: React.FC<ProjectProps> = ({ image, title, description, languages, ghLink }) => (
-  <Column md={6}>
-    <div className="project-box">
-      <div className="project-img">
-        <img className="img-fluid" src={image} alt={title} />
+export const Project: React.FC<ProjectProps> = ({ image, title, description, languages, ghLink }) => {
+  return (
+    <Column md={6}>
+      <div className="project-box">
+        <div className="project-img">
+          <img className="img-fluid" src={`${process.env.PUBLIC_URL}/{image}`} alt={title} />
+        </div>
+        <div className="project-description">
+          <Row>
+            <Column sm={12}>
+              <h4 className="p-title">{title}</h4>
+              <p className="font-weight-light">{description}</p>
+              <div className="w-more">
+                <span className="w-category">{languages.join(', ')}</span>
+                <a className="project-link" href={ghLink} target="_blank" rel="noreferrer">
+                  <i className="fa fa-github" aria-hidden="true"></i>
+                </a>
+              </div>
+            </Column>
+          </Row>
+        </div>
       </div>
-      <div className="project-description">
-        <Row>
-          <Column sm={12}>
-            <h4 className="p-title">{title}</h4>
-            <p className="font-weight-light">{description}</p>
-            <div className="w-more">
-              <span className="w-category">{languages.join(', ')}</span>
-              <a className="project-link" href={ghLink} target="_blank" rel="noreferrer">
-                <i className="fa fa-github" aria-hidden="true"></i>
-              </a>
-            </div>
-          </Column>
-        </Row>
-      </div>
-    </div>
-  </Column>
-);
+    </Column>
+  );
+}
 
 export const Projects: React.FC<ProjectsProps> = () => (
   <section id="projects" className="portfolio-mf sect-pt4 route">
