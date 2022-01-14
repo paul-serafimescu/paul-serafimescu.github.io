@@ -19,7 +19,7 @@ export const Project: React.FC<ProjectProps> = ({ image, title, description, lan
     <Column md={6}>
       <div className="project-box">
         <div className="project-img">
-          <img className="img-fluid" src={`${process.env.PUBLIC_URL}/{image}`} alt={title} />
+          <img className="img-fluid" src={`${process.env.PUBLIC_URL}/${image}`} alt={title} />
         </div>
         <div className="project-description">
           <Row>

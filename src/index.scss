@@ -150,6 +150,12 @@ section {
   -ms-transform: translate(-50%, -50%);
 }
 
+.main-text {
+  background-color: rgba(0, 0, 0, 0.45) !important;
+  padding: 20px;
+  width: 100%;
+}
+
 .icon {
   font-size: 3rem;
   color: white;

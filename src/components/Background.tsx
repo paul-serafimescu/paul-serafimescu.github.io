@@ -10,7 +10,7 @@ export const Background: React.FC<BackgroundProps> = () => (
   <Container id="home" fluid>
     <Row>
       <Image style={{height: '100vh', width: '100%', objectFit: 'cover'}} fluid src={BackgroundImage} />
-      <div className="centered-text fade-in">
+      <div className="centered-text fade-in main-text">
         <h1 className="intro-title"><br />Paul Serafimescu</h1>
         <h3>UCLA Computer Science and Engineering</h3>
         <a href="https://github.com/paul-serafimescu" target="_blank" rel="noreferrer">

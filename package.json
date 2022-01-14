@@ -2,7 +2,7 @@
   "name": "personal-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://paul-serafimescu.github.io/personal-website",
+  "homepage": "http://paul-serafimescu.github.io/",
   "dependencies": {
     "@formspree/react": "^2.2.3",
     "@testing-library/jest-dom": "^5.11.9",
