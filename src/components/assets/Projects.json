@@ -11,14 +11,13 @@
     "ghLink": "https://github.com/paul-serafimescu/growth-tracker"
   },
   {
-    "title": "Quick Grades",
-    "image": "quick-grades.svg",
-    "description": "Grades storage and calculator app. Offers full CRUD functionality and displays statistics by course name.",
+    "title": "silver",
+    "image": "silver.png",
+    "description": "Cross platform command-line text and code editor. Inspired by Vim. Features include syntax highlighting for select languages, simpler keybindings, and intuitive interactive modes.",
     "languages": [
-      "React",
-      "C# ASP.NET Core"
+      "Rust"
     ],
-    "ghLink": "https://github.com/paul-serafimescu/Quick-Grades"
+    "ghLink": "https://github.com/paul-serafimescu/silver"
   },
   {
     "title": "httpserver",
@@ -30,5 +29,14 @@
       "SQLite3"
     ],
     "ghLink": "https://github.com/paul-serafimescu/httpserver"
+  },
+  {
+    "title": "Cassava Leaf Disease Classifier",
+    "image": "cassava-leaf.jpg",
+    "description": "PyTorch machine learning model which classifies cassava leaves by types of disease. Uses RESNET-18 transfer learning and convolutional neural networks. 80% validation accuracy on 100 epochs.",
+    "languages": [
+      "Python"
+    ],
+    "ghLink": "https://github.com/paul-serafimescu/cassava-disease-classification"
   }
 ]
