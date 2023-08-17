@@ -1156,7 +1156,6 @@ header .logo a {
 	color: transparent;
 	width: 100px;
 	height: 15px;
-	background: url("../images/logo.png") no-repeat center;
 	background-size: 50px 15px;
 }
 
@@ -2521,5 +2520,3 @@ footer .copyright span:last-child::after {
 #go-top a:hover {
 	background: #000000;
 }
-
-/*# sourceMappingURL=main.css.map */
